@@ -1,10 +1,10 @@
-filt := <em:version>%</em:version>
-VERSION := $(patsubst $(filt),%,$(filter $(filt), $(shell cat install.rdf)))
+VERSION := $(shell cat manifest.json | jq '.version')
 
-dist_EXTRA :=   ./install.rdf \
+dist_EXTRA :=   ./manifest.json \
 		./chrome.manifest \
 		./defaults/preferences/prefs.js \
 		./chrome/content/options.xul \
+		./chrome/content/options.js \
 		./chrome/content/smileyfixer.png \
 		./chrome/content/messenger-overlay.xul \
 		./chrome/content/messenger-overlay.js \

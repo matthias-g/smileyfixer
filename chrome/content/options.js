@@ -1,0 +1,17 @@
+Preferences.addAll([
+    { id: "extensions.smileyfixer.debug", type: "bool" },
+    { id: "extensions.smileyfixer.enabled", type: "bool" },
+    { id: "extensions.smileyfixer.smiley", type: "string" },
+    { id: "extensions.smileyfixer.neutral", type: "string" },
+    { id: "extensions.smileyfixer.unsmiley", type: "string" },
+    { id: "extensions.smileyfixer.skull", type: "string" },
+    { id: "extensions.smileyfixer.arrow", type: "string" },
+    { id: "extensions.smileyfixer.larrow", type: "string" },
+    { id: "extensions.smileyfixer.longarrow", type: "string" },
+    { id: "extensions.smileyfixer.blob", type: "string" },
+    { id: "extensions.smileyfixer.bomba", type: "string" },
+    { id: "extensions.smileyfixer.square", type: "string" },
+    { id: "extensions.smileyfixer.toplightarrow", type: "string" },
+    { id: "extensions.smileyfixer.leftright", type: "string" },
+    { id: "extensions.smileyfixer.tree", type: "string" },
+]);
