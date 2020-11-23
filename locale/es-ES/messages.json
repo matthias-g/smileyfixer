@@ -1,0 +1,50 @@
+{
+    "arrowText": {
+        "message": "Flecha"
+    },
+    "blobText": {
+        "message": "Punto en lista de viñetas"
+    },
+    "bombaText": {
+        "message": "Bomba"
+    },
+    "debugEnabled": {
+        "message": "Modo debug (texto modificado tiene el fondo en rojo)"
+    },
+    "fixingsEnabled": {
+        "message": "Arreglos activados"
+    },
+    "frownyText": {
+        "message": "Enfadado"
+    },
+    "lArrowText": {
+        "message": "Flecha hacia a la izquierda"
+    },
+    "leftrightText": {
+        "message": "Flecha izquierda-derecha"
+    },
+    "longArrowText": {
+        "message": "Flecha larga"
+    },
+    "neutralText": {
+        "message": "Neutral"
+    },
+    "settings": {
+        "message": "Preferencias"
+    },
+    "skullText": {
+        "message": "Calavera"
+    },
+    "smileyFixerPreferences": {
+        "message": "Preferencias de Smiley Text"
+    },
+    "smileyText": {
+        "message": "Sonrisita"
+    },
+    "squareText": {
+        "message": "Cuadrado en lista de viñetas"
+    },
+    "toplightarrowText": {
+        "message": "Flecha con brillo"
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "arrowText": {
+        "message": "Arrow"
+    },
+    "blobText": {
+        "message": "List Bullet"
+    },
+    "bombaText": {
+        "message": "Bomb"
+    },
+    "debugEnabled": {
+        "message": "Debug mode (altered text has a red background)"
+    },
+    "fixingsEnabled": {
+        "message": "Fixings Enabled"
+    },
+    "frownyText": {
+        "message": "Frowny"
+    },
+    "lArrowText": {
+        "message": "Left Arrow"
+    },
+    "leftrightText": {
+        "message": "Left-right arrow"
+    },
+    "longArrowText": {
+        "message": "Long Arrow"
+    },
+    "neutralText": {
+        "message": "Neutral"
+    },
+    "settings": {
+        "message": "Settings"
+    },
+    "skullText": {
+        "message": "Skull"
+    },
+    "smileyFixerPreferences": {
+        "message": "Smiley Fixer Preferences"
+    },
+    "smileyText": {
+        "message": "Smiley"
+    },
+    "squareText": {
+        "message": "Square Bullet"
+    },
+    "toplightarrowText": {
+        "message": "Top-lit right arrow"
+    },
+    "treeText": {
+        "message": "Tree"
+    }
+}

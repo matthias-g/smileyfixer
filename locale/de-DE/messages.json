@@ -1,0 +1,53 @@
+{
+    "arrowText": {
+        "message": "Pfeil"
+    },
+    "blobText": {
+        "message": "Aufzählungszeichen"
+    },
+    "bombaText": {
+        "message": "Bombe"
+    },
+    "debugEnabled": {
+        "message": "Debug-Modus (veränderter Text wird mit rotem Hintergrund gekennzeichnet)"
+    },
+    "fixingsEnabled": {
+        "message": "Fehlerbehebungen aktiviert"
+    },
+    "frownyText": {
+        "message": "Traurig"
+    },
+    "lArrowText": {
+        "message": "Pfeil nach links"
+    },
+    "leftrightText": {
+        "message": "Pfeil nach links und rechts"
+    },
+    "longArrowText": {
+        "message": "Pfeil nach rechts"
+    },
+    "neutralText": {
+        "message": "Neutral"
+    },
+    "settings": {
+        "message": "Einstellungen"
+    },
+    "skullText": {
+        "message": "Totenkopf"
+    },
+    "smileyFixerPreferences": {
+        "message": "Smiley Fixer Einstellungen"
+    },
+    "smileyText": {
+        "message": "Glücklich"
+    },
+    "squareText": {
+        "message": "Quadrat"
+    },
+    "toplightarrowText": {
+        "message": "Pfeil nach rechts, oben hell"
+    },
+    "treeText": {
+        "message": "Baum"
+    }
+}
