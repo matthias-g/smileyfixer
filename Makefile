@@ -1,7 +1,7 @@
 VERSION := $(shell cat manifest.json | jq '.version')
 
 dist_EXTRA :=   ./manifest.json \
-		./smileyfixer.png \
+		./icon.svg \
 		./scripts/background.js \
 		./scripts/i18n.js \
 		./scripts/smileyfixer.js \
