@@ -14,5 +14,8 @@ OptionsList.forEach((option) => {
 });
 
 document.getElementById("reset").addEventListener("click", () => {
-    resetAllOptions();
+    resetToDefault();
+});
+document.getElementById("emojis").addEventListener("click", () => {
+    resetToEmojis();
 });

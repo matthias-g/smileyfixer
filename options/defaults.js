@@ -20,7 +20,21 @@ const DefaultOptions = {
     debug: false
 }
 
+const Emojis = {
+    unsmiley: "☹️",
+    neutral: "😐",
+    smiley: "😀",
+    skull: "💀",
+    arrow: "➡️",
+    larrow: "⬅️",
+    bomba: "💣",
+    square: "◼️",
+    leftright: "↔️",
+    tree: "🌲"
+}
+
 const OptionsList = Object.keys(DefaultOptions);
+const EmojisList = Object.keys(Emojis);
 
 function defaultError(error) {
     console.error("[smileyfixer]: Error:", error);

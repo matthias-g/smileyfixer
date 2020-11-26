@@ -14,7 +14,15 @@ function saveOptions(e) {
     return browser.storage.local.set(newOptions);
 }
 
-function restoreOption(id) {
+function saveEmojis() {
+    let newOptions = {};
+    EmojisList.forEach(option => {
+        newOptions[option] = Emojis[option];
+    });
+    return browser.storage.local.set(newOptions);
+}
+
+function restoreOption(id, useEmojis) {
     return browser.storage.local.get(id).then((res) => {
         let element = document.getElementById(id);
         if (element.type && element.type == "checkbox")
@@ -41,8 +49,15 @@ async function restoreAllOptions() {
 	await restoreOption("debug");
 }
 
-function resetAllOptions() {
+function resetToDefault() {
     return browser.storage.local.remove(OptionsList).then(() => {
+        restoreAllOptions();
+    });
+}
+
+function resetToEmojis() {
+    return browser.storage.local.remove(EmojisList).then(() => {
+        saveEmojis();
         restoreAllOptions();
     });
 }
