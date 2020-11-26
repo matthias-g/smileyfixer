@@ -16,16 +16,18 @@ Description from the [original readme](https://github.com/richq/smileyfixer):
 > http://lifehacker.com/5574668
 > http://superuser.com/questions/159334
 
-The [code for the core logic](https://github.com/matthias-g/smileyfixer/blob/master/scripts/smileyfixer.js) and the [locales](https://github.com/matthias-g/smileyfixer/blob/master/_locales) are taken from the [original addon](https://github.com/richq/smileyfixer) that is published under [Apache version 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
-The remaining code for MailExtensions is taken from the nicely written addon [colorediffs](https://github.com/Qeole/colorediffs/) by Qeole licensed under [MPL 2.0](https://github.com/matthias-g/smileyfixer/blob/master/MPL-2.0).
+The [code for the core logic](scripts/smileyfixer.js) and the [locales](_locales) are taken from the [original addon](https://github.com/richq/smileyfixer) that is published under [Apache version 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
+The remaining code for MailExtensions is taken from the nicely written addon [colorediffs](https://github.com/Qeole/colorediffs/) by Qeole licensed under [MPL 2.0](MPL-2.0).
 
 Installation
 ------------
 
 Clone the repository and build the extension.
 
+```bash
     git clone https://github.com/matthias-g/smileyfixer.git
     cd smileyfixer
     make
+```
 
-In the "Add-ons Manager" use "Install Add-on From File..." to install the resulting xpi file.
+In Thunderbird, go to the "Add-ons Manager" and use "Install Add-on From File..." to install the resulting xpi file.
