@@ -1,14 +1,14 @@
 {
 	"manifest_version": 2,
-	"name": "Smiley Fixer",
+	"name": "Smileyfixer",
 	"description": "Fixes smileys that show in emails created by Outlook as J",
 	"version": "2.0.0",
-	"homepage_url": "http://github.com/matthias-g/smileyfixer",
+	"homepage_url": "https://github.com/matthias-g/smileyfixer",
 	"author": "Matthias Grundmann",
 	"applications": {
 		"gecko": {
-	      "id": "smileyfixer@matthias-g",
-	      "strict_min_version": "78.4"
+			"id": "smileyfixer@matthias-g",
+			"strict_min_version": "78.4.0"
 	    }
 	},
 	"icons": {
