@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-
-<overlay id="smileyfixercomposeoverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-    <script type="application/javascript"
-        src="chrome://smileyfixer/content/smileyfixer.js"/>
-    <script type="application/javascript"
-        src="chrome://smileyfixer/content/compose-overlay.js"/>
-</overlay>

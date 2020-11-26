@@ -1,11 +1,10 @@
+// this file is based on https://github.com/richq/smileyfixer/blob/e5062cdb33f3c99d63dc332057488fd913e03089/chrome/content/smileyfixer.js
+// Apache version 2.0 license
+
 /* SmileyFixer namespace */
 
 if (typeof SmileyFixer == "undefined") {
     var SmileyFixer = {};
-
-    SmileyFixer.prefs = (Components.classes["@mozilla.org/preferences-service;1"].
-                         getService(Components.interfaces.nsIPrefService).
-                             getBranch("extensions.smileyfixer."));
 
     SmileyFixer.fixSpan = function(span, mapping) {
         var origSpan = span;
@@ -33,22 +32,8 @@ if (typeof SmileyFixer == "undefined") {
         origSpan.style.fontFamily = "inherit";
         origSpan.style.fontSize = "inherit";
         /* show in red if debugging */
-        if (SmileyFixer.prefs.getBoolPref("debug"))
+        if (SmileyFixer.prefs["debug"])
             origSpan.style.backgroundColor = "#ff0000";
-    };
-
-    SmileyFixer.onLoadMessagePane = function(event) {
-        /* Only process when there is a message present */
-        if (!gMessageDisplay)
-            return;
-        if (!gMessageDisplay.displayedMessage)
-            return;
-        if (!SmileyFixer.prefs.getBoolPref("enabled"))
-            return;
-        document.removeEventListener("load", SmileyFixer.onLoadMessagePane, true);
-        var mp = document.getElementById('messagepane');
-        SmileyFixer.doFixups(mp.contentDocument);
-        document.addEventListener("load", SmileyFixer.onLoadMessagePane, true);
     };
 
     SmileyFixer.doFixups = function(contentDocument) {
@@ -68,7 +53,7 @@ if (typeof SmileyFixer == "undefined") {
             'P': 'tree'
         };
         for (var key in mapping) {
-            mapping[key] = SmileyFixer.prefs.getStringPref(mapping[key]);
+            mapping[key] = SmileyFixer.prefs[mapping[key]];
         }
 
         var spans = contentDocument.getElementsByTagName("span");
@@ -101,25 +86,10 @@ if (typeof SmileyFixer == "undefined") {
     };
 
     SmileyFixer.init = function() {
-        document.addEventListener("load", SmileyFixer.onLoadMessagePane, true);
+        SmileyFixer.doFixups(document);
     };
 
-    /* for the compose window */
-    SmileyFixer.onLoadComposePane = function(event) {
-        var type = GetCurrentEditorType();
-        if (type !== "htmlmail")
-            return;
-        if (!SmileyFixer.prefs.getBoolPref("enabled"))
-            return;
-
-        var currentEditor = GetCurrentEditor();
-        if (currentEditor === null)
-            return;
-        var currentEditorDom = currentEditor.rootElement;
-        SmileyFixer.doFixups(currentEditorDom);
-    };
-
-    SmileyFixer.initCompose = function() {
-        document.addEventListener("load", SmileyFixer.onLoadComposePane, true);
-    };
 }
+
+SmileyFixer.prefs = options;
+SmileyFixer.init();

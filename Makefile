@@ -1,19 +1,17 @@
 VERSION := $(shell cat manifest.json | jq '.version')
 
 dist_EXTRA :=   ./manifest.json \
-		./chrome.manifest \
-		./defaults/preferences/prefs.js \
-		./chrome/content/options.xul \
-		./chrome/content/options.js \
-		./chrome/content/smileyfixer.png \
-		./chrome/content/messenger-overlay.xul \
-		./chrome/content/messenger-overlay.js \
-		./chrome/content/compose-overlay.xul \
-		./chrome/content/compose-overlay.js \
-		./chrome/content/smileyfixer.js \
-		./locale/en-US/options.dtd \
-		./locale/de-DE/options.dtd \
-		./locale/es-ES/options.dtd
+		./smileyfixer.png \
+		./scripts/background.js \
+		./scripts/i18n.js \
+		./scripts/smileyfixer.js \
+		./options/defaults.js \
+		./options/listeners.js \
+		./options/options.html \
+		./options/save-restore.js \
+		./_locales/en/messages.json \
+		./_locales/de/messages.json \
+		./_locales/es/messages.json
 
 .PHONY: all
 
